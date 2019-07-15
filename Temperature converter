@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+
+def to_fahrenheit(c):
+ fahren=c *9/5+32
+ return fahren
+
+def to_celsius(f):
+ celc=5/9*(f-32)
+ return celc
+
+conversion= (input("Please enter which measurement to convert to fahrenheit or celsius "))
+
+if conversion == "fahrenheit":
+  c= int (input("Please enter the temperature in celcius "))
+  print ("Temperature in fahrenheit is ", (to_fahrenheit (c)))
+
+elif conversion == "celsius":
+  f= int (input("Please enter the temperature in fahrenheit "))
+  print ("Temperature in Celsius is ",(to_celsius (f)))
+else:
+  print ("Please enter the appropriate operator ")
