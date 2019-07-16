@@ -1,0 +1,37 @@
+#!/usr/bin/python3
+
+def addition (num1,num2) :
+    sum=num1 + num2
+    return sum
+
+def subtraction (num1,num2) :
+    difference=num1 - num2
+    return difference
+
+def multiplication (num1,num2) :
+    product=(num1 * num2)
+    return product
+
+def division (num1,num2) :
+    quotient= (num1 / num2)
+    return quotient
+
+num1= int(input("Please enter the first number "))
+num2= int(input("Please enter the second number "))
+
+operator= (input("Please enter the operation +,-,*,/ "))
+
+if operator == "+":
+     print ("The sum is ",(addition(num1,num2)))
+
+elif operator == "-":
+     print ("The difference is ",(subtraction(num1,num2)))
+
+elif operator == "*":
+     print ("The product is ",(multiplication(num1,num2)))
+
+elif operator == "/":
+      print ("The quotient is ",(division(num1,num2)))
+          
+else:
+    print ("Please enter the appropriate operator ")
